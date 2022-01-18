@@ -1,8 +1,11 @@
-teksts = input("ievadiet skaitli: ")
-def countNumber(teksts):
-  summa = 0
-  for simbols in teksts:
-    summa = summa + int(simbols)
-  print(summa)
-  return summa
-countNumber(teksts)
+teksts = input ("Ievadi tekstu : ")
+def replaceTwos(teksts):
+  if teksts.count("2")>0:
+    teksts = teksts.replace("2","divi")
+    print (teksts)
+  else:
+    teksts = "Nekas netika aizvaietots"
+    print (teksts)
+  return teksts
+replaceTwos(teksts)
+
